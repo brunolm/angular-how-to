@@ -11,3 +11,4 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Testing
 
 - [Add project on Travis CI](https://github.com/brunolm/angular-how-to/pull/2)
+- [Add code coverage and coveralls integration](https://github.com/brunolm/angular-how-to/pull/3)
