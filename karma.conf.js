@@ -17,7 +17,13 @@ module.exports = function (config) {
     },
     coverageIstanbulReporter: {
       reports: [ 'html', 'lcovonly' ],
-      fixWebpackSourcePaths: true
+      fixWebpackSourcePaths: true,
+      thresholds: {
+        statements: 90,
+        lines: 90,
+        branches: 90,
+        functions: 90
+      }
     },
     angularCli: {
       environment: 'dev'
