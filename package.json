@@ -7,9 +7,11 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test --watch=false",
-    "test-watch": "ng test --watch=false",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test-watch": "ng test --watch=false",
+    "coverage": "ng test --watch=false --code-coverage",
+    "coveralls": "coveralls < ./coverage/lcov.info"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +36,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.2.0",
+    "coveralls": "^3.0.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
