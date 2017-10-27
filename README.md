@@ -4,3 +4,4 @@
 Each Pull Request will contain explanation and steps taken to complete a feature.
 
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
+- [Add project on Travis CI](https://github.com/brunolm/angular-how-to/pull/2)
