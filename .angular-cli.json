@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "assets/css/index.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
