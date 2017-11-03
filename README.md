@@ -7,6 +7,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## New project
 
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
+- [Upgrade from Angular 4 to Angular 5](https://github.com/brunolm/angular-how-to/pull/6)
 
 ## Testing
 
