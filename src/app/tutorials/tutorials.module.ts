@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TutorialsComponent } from './tutorials.component';
-import { Angular5Component } from './angular5/angular5.component';
 import { TutorialsRoutingModule } from './tutorials.router';
 
 @NgModule({
@@ -9,6 +8,6 @@ import { TutorialsRoutingModule } from './tutorials.router';
     CommonModule,
     TutorialsRoutingModule,
   ],
-  declarations: [TutorialsComponent, Angular5Component]
+  declarations: [TutorialsComponent]
 })
 export class TutorialsModule { }
