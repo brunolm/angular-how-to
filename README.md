@@ -18,3 +18,8 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Installing Frameworks and Libs
 
 - [Add Boostrap 4](https://github.com/brunolm/angular-how-to/pull/5)
+
+
+## Routes
+
+- [Adding routes](https://github.com/brunolm/angular-how-to/pull/7)
