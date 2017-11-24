@@ -9,7 +9,7 @@
     "test": "ng test --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test-watch": "ng test --watch=false",
+    "test-watch": "ng test --watch=true",
     "coverage": "ng test --watch=false --code-coverage",
     "coveralls": "coveralls < ./coverage/lcov.info"
   },
