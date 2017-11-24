@@ -1,0 +1,17 @@
+<div>
+  <p>You can use @Input to decorate a field making it accept values sent by the component props.</p>
+  <p>For example:</p>
+  <pre>
+    export class TitleComponent {{ '{' }}
+      @Input()
+      message: string;
+    {{ '}' }}
+  </pre>
+
+  <p>And then you can call the component passing a value for message.</p>
+  <pre>
+    &lt;app-title message="Hello world" /&gt;
+  </pre>
+
+  <app-title message="Hello world"></app-title>
+</div>
