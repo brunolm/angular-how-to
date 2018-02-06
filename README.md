@@ -4,6 +4,10 @@
 
 Each Pull Request will contain explanation and steps taken to complete a feature.
 
+## Guides
+
+[Angular guides](docs/README.md)
+
 ## New project
 
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
