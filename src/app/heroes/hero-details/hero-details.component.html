@@ -1,0 +1,12 @@
+
+<h3>Hero list</h3>
+<ul>
+  <li *ngFor="let hero of heroes; trackBy: byId">
+    <a [routerLink]="[ '/heroes', hero.id ]" routerLinkActive="active">{{ hero.name }}</a>
+  </li>
+</ul>
+
+<hr>
+
+<h3>Hero</h3>
+<pre>{{ activeHero | json }}</pre>
