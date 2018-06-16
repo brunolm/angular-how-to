@@ -38,6 +38,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 
 ## Modules & Components
 
+- [Add about, contact, heroes modules/components](https://github.com/brunolm/angular-how-to/pull/11)
 - [Sub-modules and components](https://github.com/brunolm/angular-how-to/pull/9)
   - [Sharing components from one module and importing in another](https://github.com/brunolm/angular-how-to/commit/ed662a5bd4eac6f3dbfcc466ae7c459fede35435)
   - [Declaring and exporting common components](https://github.com/brunolm/angular-how-to/commit/a78c9f50d1d98d064f113a588b044d363e121745)
