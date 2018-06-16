@@ -44,3 +44,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
   - [Declaring and exporting common components](https://github.com/brunolm/angular-how-to/commit/a78c9f50d1d98d064f113a588b044d363e121745)
   - [Creating a component that can receive values through attributes with @Input decorator](https://github.com/brunolm/angular-how-to/commit/6261d26af1dfa91410687b379256bc719ff70be0)
     - [Example markup usage](https://github.com/brunolm/angular-how-to/commit/961248c697d3fa51ada318dbb08e9480d06db413)
+
+## Forms
+
+- [Reactive form, hero-edit](https://github.com/brunolm/angular-how-to/pull/12)
