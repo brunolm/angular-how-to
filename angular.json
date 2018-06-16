@@ -94,7 +94,7 @@
       }
     },
     "angular-how-to-e2e": {
-      "root": "",
+      "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
       "architect": {
