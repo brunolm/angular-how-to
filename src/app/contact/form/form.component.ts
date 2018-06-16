@@ -4,7 +4,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
   contactForm = this.formBuilder.group({
@@ -12,7 +12,7 @@ export class FormComponent {
     message: this.formBuilder.control('', Validators.required),
   });
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {}
 
   submit() {
     if (this.contactForm.invalid) {
