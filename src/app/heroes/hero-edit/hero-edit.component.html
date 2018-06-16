@@ -1,0 +1,66 @@
+<form (ngSubmit)="submit()" [formGroup]="heroForm">
+  <div class="form-group" [ngClass]="{
+    'is-invalid': name.invalid && name.dirty,
+    'is-valid': name.valid && name.dirty
+  }">
+    <label for="name">Name</label>
+    <input formControlName="name" type="text" class="form-control" name="name" id="name" aria-describedby="aria-name" placeholder="Saitama">
+    <div class="invalid-feedback"
+      *ngIf="name.invalid && name.dirty">
+      <div *ngIf="!!name?.errors?.required">Name is required</div>
+      <div *ngIf="!!name?.errors?.minlength">
+        This field length is {{ name?.errors['minlength']?.actualLength }}
+        but should be at least {{ name?.errors['minlength']?.requiredLength }}.
+      </div>
+    </div>
+
+    <small id="aria-name" hidden>Hero name</small>
+  </div>
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input formControlName="mainCharacter" type="checkbox" class="form-check-input" name="mainCharacter" id="mainCharacter" value="true">
+      Is main character
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="secret">Hero's secret key</label>
+    <input formControlName="secret" type="password" class="form-control" name="secret" id="secret" placeholder="secret">
+    <div class="invalid-feedback">
+      <div *ngIf="!!secret?.errors?.pattern">
+        The field requires the pattern {{ secret?.errors['pattern']?.requiredPattern }}
+        but the current value is {{ secret?.errors['pattern']?.actualValue }}.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="history">History</label>
+    <textarea formControlName="history" class="form-control" name="history" id="history" rows="3"></textarea>
+    <div class="invalid-feedback">
+      <div *ngIf="!!history?.errors?.minlength">
+        This field length is {{ history?.errors['minlength']?.actualLength }}
+        but should be at least {{ history?.errors['minlength']?.requiredLength }}.
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-primary mr-2">Save</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+  </div>
+</form>
+
+<hr>
+
+<div class="row">
+  <div class="col">
+    <h3>Form value</h3>
+    <pre>{{ heroForm?.value | json }}</pre>
+  </div>
+  <div class="col">
+    <h3>Form errors</h3>
+    <pre>{{ formErrors | json }}</pre>
+  </div>
+</div>
