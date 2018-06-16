@@ -1,22 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ContactComponent } from './contact.component';
-import { FormComponent } from './form/form.component';
+import { HeroEditComponent } from './hero-edit.component';
 
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('HeroEditComponent', () => {
+  let component: HeroEditComponent;
+  let fixture: ComponentFixture<HeroEditComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactComponent, FormComponent],
+      declarations: [HeroEditComponent],
       imports: [ReactiveFormsModule],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(HeroEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
