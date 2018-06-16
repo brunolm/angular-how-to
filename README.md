@@ -35,6 +35,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 - [Adding routes](https://github.com/brunolm/angular-how-to/pull/7)
   - [Adding a subroute](https://github.com/brunolm/angular-how-to/commit/1f5b257a273d385b1f4b45d76466b024fb5fa798)
 - [Identifying current route in a link (ex: active menu)](https://github.com/brunolm/angular-how-to/commit/a318697990da9aee8dee64102927f523d4d6d231)
+- [Getting parameters](https://github.com/brunolm/angular-how-to/pull/13)
 
 ## Modules & Components
 
