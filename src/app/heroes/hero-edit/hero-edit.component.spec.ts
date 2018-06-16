@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { HeroEditComponent } from './hero-edit.component';
 
@@ -8,9 +9,9 @@ describe('HeroEditComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroEditComponent ]
-    })
-    .compileComponents();
+      declarations: [HeroEditComponent],
+      imports: [ReactiveFormsModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
