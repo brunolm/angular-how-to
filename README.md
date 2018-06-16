@@ -11,6 +11,10 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## New project
 
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
+- [Add prettier config](https://github.com/brunolm/angular-how-to/pull/10)
+
+### Upgrades
+
 - ~~[Upgrade from Angular 4 to Angular 5](https://github.com/brunolm/angular-how-to/pull/6)~~
 - [Upgrade from Angular 5 to Angular 6](https://github.com/brunolm/angular-how-to/commit/ffa5b2dbfd88f0846ad0bd4b158b4b44a7044bdf)
 - [Upgrade @angular-cli](https://github.com/brunolm/angular-how-to/pull/8)
