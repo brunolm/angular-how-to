@@ -32,6 +32,7 @@ export class HeroDetailsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    //
   }
 
   byId(_, hero: Hero) {

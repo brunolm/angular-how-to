@@ -17,6 +17,7 @@ export class FormComponent {
   submit() {
     if (this.contactForm.invalid) {
       alert('the form is wrong');
+
       return;
     }
 

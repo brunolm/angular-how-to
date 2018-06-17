@@ -15,10 +15,12 @@ export class HeroEditComponent implements OnInit {
   history: FormControl;
 
   constructor(private formBuilder: FormBuilder) {
-    this.name = this.formBuilder.control('', [Validators.required, Validators.minLength(3)]);
+    const nameMinLen = 3;
+    const textMinLen = 10;
+    this.name = this.formBuilder.control('', [Validators.required, Validators.minLength(nameMinLen)]);
     this.mainCharacter = this.formBuilder.control('');
     this.secret = this.formBuilder.control('', Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{3,}$/));
-    this.history = this.formBuilder.control('', Validators.minLength(10));
+    this.history = this.formBuilder.control('', Validators.minLength(textMinLen));
 
     this.heroForm = this.formBuilder.group({
       name: this.name,
@@ -28,7 +30,9 @@ export class HeroEditComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    //
+  }
 
   get formErrors(): any {
     if (!this.heroForm) {
@@ -49,6 +53,7 @@ export class HeroEditComponent implements OnInit {
   submit() {
     if (this.heroForm.invalid) {
       alert('invalid form');
+
       return;
     }
 
