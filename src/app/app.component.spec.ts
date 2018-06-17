@@ -1,13 +1,25 @@
+import { NgReduxRouterModule } from '@angular-redux/router';
+import { NgReduxModule } from '@angular-redux/store';
 import { async, TestBed } from '@angular/core/testing';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NgxReduxStatePropsModule } from 'ngx-redux-state-props';
 
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent],
-      imports: [RouterTestingModule],
+      imports: [
+        RouterTestingModule,
+        BrowserModule,
+        SharedModule,
+        NgReduxModule,
+        NgReduxRouterModule.forRoot(),
+        NgxReduxStatePropsModule,
+      ],
     }).compileComponents();
   }));
 
