@@ -1,11 +1,9 @@
 {
   "rulesDirectory": [
-    "node_modules/codelyzer",
-    "tslint-no-padding"
+    "node_modules/codelyzer"
   ],
   "extends": ["tslint:recommended"],
   "rules": {
-    "no-padding": true,
     "import-blacklist": [
       true,
       "rxjs/Rx"
