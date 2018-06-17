@@ -12,6 +12,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
 - [Add prettier config](https://github.com/brunolm/angular-how-to/pull/10)
+- [Upgrade TSLint and set rules](https://github.com/brunolm/angular-how-to/commit/fe13bb2d148515226f58cbb2c71bf7647eb40db6)
 
 ### Upgrades
 
