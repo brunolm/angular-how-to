@@ -50,3 +50,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Forms
 
 - [Reactive form, hero-edit](https://github.com/brunolm/angular-how-to/pull/12)
+
+## Services
+
+- [Adding Nasa service, consume Nasa API](https://github.com/brunolm/angular-how-to/pull/15)
