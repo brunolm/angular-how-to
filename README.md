@@ -30,6 +30,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 
 - [Add Boostrap 4](https://github.com/brunolm/angular-how-to/pull/5)
 - [Add Redux](https://github.com/brunolm/angular-how-to/pull/14)
+  - [API call in Redux](https://github.com/brunolm/angular-how-to/pull/16)
 
 ## Routes
 

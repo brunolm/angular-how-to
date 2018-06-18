@@ -18,4 +18,8 @@ export class AboutComponent {
   testRedux() {
     this.actions.getApiValue();
   }
+
+  getNasaApod() {
+    this.actions.getNasaApod();
+  }
 }
