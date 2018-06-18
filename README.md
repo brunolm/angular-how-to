@@ -12,6 +12,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
 - [Add prettier config](https://github.com/brunolm/angular-how-to/pull/10)
+- [Prettier git hook pre-commit](https://github.com/brunolm/angular-how-to/pull/18)
 
 ### Upgrades
 
