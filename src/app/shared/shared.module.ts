@@ -4,11 +4,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { LayoutComponent } from './layout/layout.component';
+import { MarkdownPipe } from './markdown.pipe';
 import { TitleComponent } from './title/title.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule, HttpClientModule],
-  exports: [LayoutComponent, TitleComponent],
-  declarations: [LayoutComponent, TitleComponent],
+  exports: [LayoutComponent, TitleComponent, MarkdownPipe],
+  declarations: [LayoutComponent, TitleComponent, MarkdownPipe],
 })
 export class SharedModule {}
