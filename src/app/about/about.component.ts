@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgxReduxStatePropsService } from 'ngx-redux-state-props';
 
+import { AppState } from '../app-state.model';
 import { AboutActions } from './services/about.actions';
 
 @Component({
@@ -9,10 +10,10 @@ import { AboutActions } from './services/about.actions';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  constructor(private actions: AboutActions, private redux: NgxReduxStatePropsService) {}
+  constructor(private actions: AboutActions, private redux: NgxReduxStatePropsService<AppState>) {}
 
   get state() {
-    return this.redux.appState;
+    return this.redux.appState && this.redux.appState.about;
   }
 
   testRedux() {

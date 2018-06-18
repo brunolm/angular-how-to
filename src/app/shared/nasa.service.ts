@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import camelcaseKeys from 'camelcase-keys';
 import { map } from 'rxjs/operators';
 
-interface Apod {
+export interface Apod {
   date: string;
   explanation: string;
   hdurl: string;
