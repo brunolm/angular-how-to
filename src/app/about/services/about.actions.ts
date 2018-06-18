@@ -1,5 +1,6 @@
 import { dispatch } from '@angular-redux/store';
 import { Injectable } from '@angular/core';
+import { NasaService } from '../../shared/nasa.service';
 
 const wait = (ms) => {
   return new Promise((r) => setTimeout(r, ms));
@@ -7,8 +8,21 @@ const wait = (ms) => {
 
 @Injectable()
 export class AboutActions {
-  static readonly getApiValueType = 'getApiValueType';
   static readonly apiSuccessType = 'apiSuccessType';
+
+  constructor(private nasa: NasaService) {}
+
+  @dispatch()
+  apiSuccess(data) {
+    console.log('ACTION: apiSuccess');
+
+    return {
+      type: AboutActions.apiSuccessType,
+      data,
+    };
+  }
+
+  // thunks
 
   @dispatch()
   getApiValue() {
@@ -19,16 +33,17 @@ export class AboutActions {
     return async (dispatcher) => {
       await wait(testTimeout);
       console.log('after 1s');
-      dispatcher(this.apiSuccess());
+      dispatcher(this.apiSuccess({ mock: 1 }));
     };
   }
 
   @dispatch()
-  apiSuccess() {
-    console.log('ACTION: apiSuccess');
+  getNasaApod() {
+    console.log('ACTION: getNasaApod');
 
-    return {
-      type: AboutActions.apiSuccessType,
+    return async (dispatcher) => {
+      const apod = await this.nasa.getApod();
+      dispatcher(this.apiSuccess(apod));
     };
   }
 }
