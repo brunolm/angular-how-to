@@ -5,6 +5,8 @@
 </div>
 
 <button (click)="testRedux()" class="btn btn-primary">Test redux</button>
+-
+<button class="btn btn-primary" (click)="getNasaApod()">APOD</button>
 
 <div>
   <h2>App State</h2>
@@ -13,4 +15,6 @@
 
 <hr>
 
-<button class="btn btn-primary" (click)="getNasaApod()">APOD</button>
+<textarea style="width: 100%; height: 200px" [(ngModel)]="md"></textarea>
+
+<div [innerHTML]="md | markdown"></div>

@@ -10,6 +10,13 @@ import { AboutActions } from './services/about.actions';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
+  md = `# Write some markdown
+- here and
+- here
+- then
+  - here
+    - or here`;
+
   constructor(private actions: AboutActions, private redux: NgxReduxStatePropsService<AppState>) {}
 
   get state() {
