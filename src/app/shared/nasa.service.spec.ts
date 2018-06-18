@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { inject, TestBed } from '@angular/core/testing';
 
 import { NasaService } from './nasa.service';
@@ -5,6 +6,7 @@ import { NasaService } from './nasa.service';
 describe('NasaService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       providers: [NasaService],
     });
   });

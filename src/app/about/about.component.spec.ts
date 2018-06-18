@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgxReduxStatePropsService } from 'ngx-redux-state-props';
 
@@ -11,6 +12,7 @@ describe('AboutComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AboutComponent],
+      imports: [HttpClientTestingModule],
       providers: [AboutActions, NgxReduxStatePropsService],
     }).compileComponents();
   }));
