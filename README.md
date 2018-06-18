@@ -55,3 +55,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Services
 
 - [Adding Nasa service, consume Nasa API](https://github.com/brunolm/angular-how-to/pull/15)
+
+## Pipes
+
+- [Add markdown pipe (convert text to markdown)](https://github.com/brunolm/angular-how-to/pull/17)
