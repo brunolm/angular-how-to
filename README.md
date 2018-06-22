@@ -1,4 +1,5 @@
 # Angular: How To
+
 [![Build Status](https://travis-ci.org/brunolm/angular-how-to.svg?branch=master)](https://travis-ci.org/brunolm/angular-how-to)
 [![Coverage Status](https://coveralls.io/repos/github/brunolm/angular-how-to/badge.svg?branch=master)](https://coveralls.io/github/brunolm/angular-how-to?branch=master)
 
@@ -13,6 +14,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 - [Create a new Angular project](https://github.com/brunolm/angular-how-to/pull/1)
 - [Add prettier config](https://github.com/brunolm/angular-how-to/pull/10)
 - [Prettier git hook pre-commit](https://github.com/brunolm/angular-how-to/pull/18)
+  - [Running prettier on ts, tsx, scss, md](https://github.com/brunolm/angular-how-to/pull/20)
 
 ### Upgrades
 
