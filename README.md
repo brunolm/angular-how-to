@@ -37,6 +37,7 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 
 - [Add Boostrap 4](https://github.com/brunolm/angular-how-to/pull/5)
 - [Add Mobx (redux-like)](https://github.com/brunolm/angular-how-to/pull/22)
+  - [Add Mobx async action](https://github.com/brunolm/angular-how-to/commit/3a473cba949ffd5f7425a56b30fd85c667984dbe)
 - [Add Redux](https://github.com/brunolm/angular-how-to/pull/14)
   - [API call in Redux](https://github.com/brunolm/angular-how-to/pull/16)
   - [redux tag](https://github.com/brunolm/angular-how-to/tree/redux)
