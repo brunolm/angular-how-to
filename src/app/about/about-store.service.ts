@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
+import { runInAction } from 'mobx';
 import { action, observable } from 'mobx-angular';
+
+import { NasaService } from '../shared/nasa.service';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +10,7 @@ import { action, observable } from 'mobx-angular';
 export class AboutStoreService {
   @observable title: string;
 
-  constructor() {
+  constructor(private nasaService: NasaService) {
     this.initialize();
   }
 
@@ -16,9 +19,11 @@ export class AboutStoreService {
     this.title = 'about:hello world';
   }
 
-  @action
-  randomTitle() {
-    // tslint:disable-next-line:no-magic-numbers
-    this.title = Math.random().toString(32);
+  async randomTitle() {
+    const response = await this.nasaService.getApod();
+
+    runInAction(() => {
+      this.title = response.title;
+    });
   }
 }

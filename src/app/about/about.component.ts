@@ -36,7 +36,7 @@ export class AboutComponent {
     this.actions.getNasaApod();
   }
 
-  updateTitle() {
-    this.store.about.randomTitle();
+  async updateTitle() {
+    await this.store.about.randomTitle();
   }
 }
