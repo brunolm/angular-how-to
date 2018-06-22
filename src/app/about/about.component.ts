@@ -37,8 +37,6 @@ export class AboutComponent {
   }
 
   updateTitle() {
-    // tslint:disable-next-line:no-magic-numbers
-    this.store.about.title = `${Math.random() * 10000}`;
-    // this.store.about.randomTitle();
+    this.store.about.randomTitle();
   }
 }
