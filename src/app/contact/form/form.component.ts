@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
+import { AppStoreService } from '../../core/app-store.service';
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -12,7 +14,7 @@ export class FormComponent {
     message: this.formBuilder.control('', Validators.required),
   });
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder, public store: AppStoreService) {}
 
   submit() {
     if (this.contactForm.invalid) {

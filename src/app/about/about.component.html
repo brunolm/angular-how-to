@@ -4,6 +4,12 @@
   </p>
 </div>
 
+<div>
+  <h3>Mobx</h3>
+  <p>{{ store?.about?.title }}</p>
+  <button class="btn btn-primary" (click)="updateTitle()">Change title</button>
+</div>
+
 <button (click)="testRedux()" class="btn btn-primary">Test redux</button>
 -
 <button class="btn btn-primary" (click)="getNasaApod()">APOD</button>

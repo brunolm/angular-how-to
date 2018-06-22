@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgxReduxStatePropsService } from 'ngx-redux-state-props';
 
 import { AppState } from '../app-state.model';
+import { AppStoreService } from '../core/app-store.service';
 import { AboutActions } from './services/about.actions';
 
 @Component({
@@ -17,7 +18,11 @@ export class AboutComponent {
   - here
     - or here`;
 
-  constructor(private actions: AboutActions, private redux: NgxReduxStatePropsService<AppState>) {}
+  constructor(
+    private actions: AboutActions,
+    private redux: NgxReduxStatePropsService<AppState>,
+    public store: AppStoreService,
+  ) {}
 
   get state() {
     return this.redux.appState && this.redux.appState.about;
@@ -29,5 +34,11 @@ export class AboutComponent {
 
   getNasaApod() {
     this.actions.getNasaApod();
+  }
+
+  updateTitle() {
+    // tslint:disable-next-line:no-magic-numbers
+    this.store.about.title = `${Math.random() * 10000}`;
+    // this.store.about.randomTitle();
   }
 }
