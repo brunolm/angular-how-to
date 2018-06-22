@@ -22,7 +22,7 @@
   "lint-staged": {
     "*.{ts,tsx,scss,md}": [
       "prettier --write",
-      "tslint --fix",
+      "npm run lint angular-how-to -- --fix",
       "git add"
     ]
   },
