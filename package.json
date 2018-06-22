@@ -43,6 +43,8 @@
     "camelcase-keys": "^4.2.0",
     "core-js": "^2.4.1",
     "marked": "^0.4.0",
+    "mobx": "^5.0.3",
+    "mobx-angular": "^3.0.1",
     "ngx-redux-state-props": "0.0.6",
     "ngx-take-until-destroy": "^3.0.0",
     "redux": "^4.0.0",
