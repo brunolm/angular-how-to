@@ -5,7 +5,16 @@ import { action, observable } from 'mobx-angular';
   providedIn: 'root',
 })
 export class AboutStoreService {
-  @observable title = 'about:hello world';
+  @observable title: string;
+
+  constructor() {
+    this.initialize();
+  }
+
+  @action
+  private initialize() {
+    this.title = 'about:hello world';
+  }
 
   @action
   randomTitle() {

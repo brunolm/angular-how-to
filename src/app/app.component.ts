@@ -1,6 +1,7 @@
 import { NgReduxRouter, routerReducer } from '@angular-redux/router';
 import { DevToolsExtension, NgRedux } from '@angular-redux/store';
 import { Component } from '@angular/core';
+import { configure } from 'mobx';
 import { combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 
@@ -30,6 +31,7 @@ export class AppComponent {
       this.devTools.isEnabled() ? [this.devTools.enhancer()] : undefined,
     );
     this.ngReduxRouter.initialize();
+    configure({ enforceActions: 'strict' });
   }
 
   createReducer(ReducerService) {
