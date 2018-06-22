@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
-import { AppStoreService } from '../../core/app-store.service';
+import { AppStoreService } from '../../app-store.service';
 
 @Component({
   selector: 'app-form',

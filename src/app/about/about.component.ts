@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NgxReduxStatePropsService } from 'ngx-redux-state-props';
 
 import { AppState } from '../app-state.model';
-import { AppStoreService } from '../core/app-store.service';
+import { AppStoreService } from '../app-store.service';
 import { AboutActions } from './services/about.actions';
 
 @Component({

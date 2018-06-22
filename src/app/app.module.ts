@@ -6,10 +6,10 @@ import { MobxAngularModule } from 'mobx-angular';
 import { NgxReduxStatePropsModule } from 'ngx-redux-state-props';
 
 import { AboutStoreService } from './about/about-store.service';
+import { AppStoreService } from './app-store.service';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
 import { ContactStoreService } from './contact/contact-store.service';
-import { AppStoreService } from './core/app-store.service';
 import { HeroesStoreService } from './heroes/heroes-store.service';
 import { SharedModule } from './shared/shared.module';
 import { TutorialsStoreService } from './tutorials/tutorials-store.service';
