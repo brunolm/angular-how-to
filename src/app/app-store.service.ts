@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { configure } from 'mobx';
 
 import { AboutStoreService } from './about/about-store.service';
 import { ContactStoreService } from './contact/contact-store.service';
@@ -15,7 +14,5 @@ export class AppStoreService {
     public contact: ContactStoreService,
     public heroes: HeroesStoreService,
     public tutorials: TutorialsStoreService,
-  ) {
-    configure({ enforceActions: 'strict' });
-  }
+  ) {}
 }
