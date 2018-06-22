@@ -36,8 +36,10 @@ Each Pull Request will contain explanation and steps taken to complete a feature
 ## Installing Frameworks and Libs
 
 - [Add Boostrap 4](https://github.com/brunolm/angular-how-to/pull/5)
+- [Add Mobx (redux-like)](https://github.com/brunolm/angular-how-to/pull/22)
 - [Add Redux](https://github.com/brunolm/angular-how-to/pull/14)
   - [API call in Redux](https://github.com/brunolm/angular-how-to/pull/16)
+  - [redux tag](https://github.com/brunolm/angular-how-to/tree/redux)
 
 ## Routes
 
