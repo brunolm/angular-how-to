@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { runInAction } from 'mobx';
 import { action, observable } from 'mobx-angular';
 
 import { NasaService } from '../shared/nasa.service';
@@ -19,11 +18,14 @@ export class AboutStoreService {
     this.title = 'about:hello world';
   }
 
+  @action
+  setTitle(title: string) {
+    this.title = title;
+  }
+
   async randomTitle() {
     const response = await this.nasaService.getApod();
 
-    runInAction(() => {
-      this.title = response.title;
-    });
+    this.setTitle(response.title);
   }
 }
